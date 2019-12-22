@@ -1,7 +1,9 @@
 <template>
   <div class="landing">
-    <h1>Jack Wilburn</h1>
-    <p>Full Stack Developer, Linux Enthusiast, Web Designer</p>
+    <div class="text">
+      <h1>Jack Wilburn</h1>
+      <p>Full Stack Developer, Linux Enthusiast, Web Designer</p>
+    </div>
   </div>
 </template>
 
@@ -16,17 +18,23 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .landing {
+  display:table;
   text-align: center;
-  vertical-align: middle;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+}
+
+.text {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 h1 {
+  margin: 0;
   font-size: 8em;
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 </style>
