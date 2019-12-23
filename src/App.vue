@@ -2,18 +2,21 @@
   <div id="app">
     <Landing/>
     <Projects/>
+    <Resume/>
   </div>
 </template>
 
 <script>
 import Landing from './components/Landing.vue'
 import Projects from './components/Projects.vue'
+import Resume from './components/Resume.vue'
 
 export default {
   name: 'app',
   components: {
     Landing,
-    Projects
+    Projects,
+    Resume
   }
 }
 </script>
@@ -27,6 +30,6 @@ export default {
 }
 
 html {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(180deg, #84fab0 0%, #8fd3f4 100%);
 }
 </style>
