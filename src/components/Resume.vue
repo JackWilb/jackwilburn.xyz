@@ -13,14 +13,8 @@
           <li>Responsibilities</li>
       </ul>
 
-      <h3>Software Developer</h3>
-      <h4>Scientific Computing and Imaging Insitute, University of Utah, Salt Lake City</h4>
-      <ul>
-          <li>Responsibilities</li>
-      </ul>
-
-      <h3>Software Developer</h3>
-      <h4>Scientific Computing and Imaging Insitute, University of Utah, Salt Lake City</h4>
+      <h3>Data Scientist</h3>
+      <h4>Emperitas, Salt Lake City</h4>
       <ul>
           <li>Responsibilities</li>
       </ul>
@@ -33,12 +27,6 @@
           <li>Responsibilities</li>
       </ul>
 
-      <h3>Software Developer</h3>
-      <h4>Scientific Computing and Imaging Insitute, University of Utah, Salt Lake City</h4>
-      <ul>
-          <li>Responsibilities</li>
-      </ul>
-
       <!-- Articles -->
       <h2>Articles</h2>
       <h3>Software Developer</h3>
@@ -47,34 +35,16 @@
           <li>Responsibilities</li>
       </ul>
 
-      <h3>Software Developer</h3>
-      <h4>Scientific Computing and Imaging Insitute, University of Utah, Salt Lake City</h4>
-      <ul>
-          <li>Responsibilities</li>
-      </ul>
-
       <!-- Presentations -->
       <h2>Presentations</h2>
-      <h3>Software Developer</h3>
-      <h4>Scientific Computing and Imaging Insitute, University of Utah, Salt Lake City</h4>
-      <ul>
-          <li>Responsibilities</li>
-      </ul>
-
-      <h3>Software Developer</h3>
-      <h4>Scientific Computing and Imaging Insitute, University of Utah, Salt Lake City</h4>
+      <h3>How To De-anonymize 20,000 Ethereum Users, The Easy Way</h3>
+      <h4>Big Mountain Data and Dev, Eccles Theater, Salt Lake City</h4>
       <ul>
           <li>Responsibilities</li>
       </ul>
 
       <!-- Miscellaneous -->
       <h2>Miscellaneous</h2>
-      <h3>Software Developer</h3>
-      <h4>Scientific Computing and Imaging Insitute, University of Utah, Salt Lake City</h4>
-      <ul>
-          <li>Responsibilities</li>
-      </ul>
-
       <h3>Software Developer</h3>
       <h4>Scientific Computing and Imaging Insitute, University of Utah, Salt Lake City</h4>
       <ul>

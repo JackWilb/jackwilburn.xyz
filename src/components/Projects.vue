@@ -1,10 +1,10 @@
 <template>
-  <div class="landing">
+  <div class="projects">
     <div class="text">
       <h2>My Current Projects</h2>
-      <ProjectCard title="Multinet" description="A multivariate network visualization toolbox that allows researchers to use state of the art visualization tools to interact with their data."/>
-      <ProjectCard title="Neuromodulation Registry" description="A registry for DBS and TMS neuro-surgical data. Allows researchers to interact with neuromodulation data to generate and test hypotheses."/>
-      <ProjectCard title="AQ&U" description="A central location for Utah air quality sensor data. This site and the associated sensor stations track air quality and relay that information to researchers."/>
+      <ProjectCard title="Multinet" description="A multivariate network visualization toolbox that allows researchers to use state of the art visualization tools to interact with their data." github="https://github.com/multinet-app" link="https://multinet.app/"/>
+      <ProjectCard title="Neuromodulation Registry" description="A registry for DBS and TMS neuro-surgical data. Allows researchers to interact with neuromodulation data to generate and test hypotheses." link="https://neuromodulationregistry.org"/>
+      <ProjectCard title="AQ&U" description="A central location for Utah air quality sensor data. This site and the associated sensor stations track air quality and relay that information to researchers." github="https://github.com/aqandu" link="https://www.aqandu.org/"/>
       <br/>
       <br/>
       <br/>
