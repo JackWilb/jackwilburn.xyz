@@ -24,7 +24,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .card {
-  display:inline-block;
+  display:inline-grid;
   margin: 2%;
   margin-top: 50px;
   margin-bottom: 50px;
