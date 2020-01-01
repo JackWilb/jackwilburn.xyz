@@ -13,6 +13,7 @@
         <ul>
             <li>Data mining, machine learning and web stack development with graph databases.
             <li>Work with faculty and students in designing and developing client-server applications in support of research projects.
+            <li>Mentor students on software development best practices such as testing, CI/CD, and coding habits.
             <li>Independently develop user interfaces, APIs, and server components with state-of-the-art web frontend technologies like HTML5, SCSS, Vue, React, Typescript, D3.js, Vega, chart.js and back end technologies such as Flask, ArangoDB, PostgreSQL, MongoDB, Redis, and Elasticsearch.
             <li>Create and maintain build, testing, and deployment systems with Git, Github, Slack, Docker, AWS, Circle-CI, webpack, npm and many others.
             <li>Develop high quality and well documented code.
