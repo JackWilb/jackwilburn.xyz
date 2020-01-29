@@ -28,7 +28,6 @@ export default {
   margin: 2%;
   margin-top: 50px;
   margin-bottom: 50px;
-  height: 100%;
   width: 25%;
   background-color: white;
   border-radius: 15px;
