@@ -93,6 +93,7 @@ export default {
 
 .left {
   padding: 4%;
+  padding-left: 10%;
   display: table-cell;
   text-align: center;
   width: 25%;
