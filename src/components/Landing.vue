@@ -3,6 +3,7 @@
     <div class="text">
       <h1>Jack Wilburn</h1>
       <p>Full Stack Developer, Linux Enthusiast, Web Designer</p>
+      <a :href="`mailto:${email}`">Email me!</a>
     </div>
   </div>
 </template>
@@ -11,11 +12,14 @@
 export default {
   name: 'Landing',
   props: {
+  },
+  data() {
+    const email = 'jackwilburn@tutanota.com'
+    return {email}
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .landing {
   display:table;
@@ -37,4 +41,10 @@ h1 {
 p {
   font-size: 1.5em;
 }
+
+a,
+a:hover {
+  color: inherit;
+}
+
 </style>
