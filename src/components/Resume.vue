@@ -83,32 +83,37 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .resume {
   display:table;
+  text-align: center;
   height: 100vh;
   width: 100%;
 }
 
 .left {
-  padding: 4%;
-  padding-left: 10%;
-  display: table-cell;
   text-align: center;
-  width: 25%;
+  width: 40%;
+  display:inline-grid;
+  border-radius: 15px;
+  text-align: center;
+  min-width: 300px;
 }
 
 .right {
-  padding: 10%;
-  display: table-cell;
   text-align: left;
-  width: 50%;
+  width: 40%;
+  display:inline-grid;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  min-width: 300px;
 }
 
 #headshot {
+  margin-left: 20%;
   padding: 0;
-  width: 100%;
+  width: 60%;
   border-radius: 400px;
 }
 

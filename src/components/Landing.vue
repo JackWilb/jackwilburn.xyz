@@ -35,7 +35,7 @@ export default {
 
 h1 {
   margin: 0;
-  font-size: 8em;
+  font-size: 500%;
 }
 
 p {

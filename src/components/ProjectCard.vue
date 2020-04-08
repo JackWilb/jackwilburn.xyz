@@ -21,7 +21,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .card {
   display:inline-grid;
@@ -32,6 +31,7 @@ export default {
   background-color: white;
   border-radius: 15px;
   text-align: center;
+  min-width: 300px;
 }
 
 h3 {

@@ -29,18 +29,12 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .projects {
   display:table;
   text-align: center;
   height: 100vh;
   width: 100%;
-}
-
-.text {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 h2 {
