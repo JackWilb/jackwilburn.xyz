@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="text-center">
     <Biography />
     <Projects />
     <Resume />
@@ -22,14 +22,8 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
-html {
-  background-image: linear-gradient(180deg, #84fab0 0%, #8fd3f4 100%);
-}
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 </style>
