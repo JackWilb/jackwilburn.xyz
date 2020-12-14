@@ -1,20 +1,24 @@
 <template>
   <div id="app">
     <Biography />
+    <Projects />
+    <Resume />
   </div>
 </template>
 
 <script>
 import Biography from './components/Biography.vue';
+import Projects from './components/Projects.vue';
+import Resume from './components/Resume.vue';
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     Biography,
     Projects,
-    Resume
-  }
-}
+    Resume,
+  },
+};
 </script>
 
 <style>
