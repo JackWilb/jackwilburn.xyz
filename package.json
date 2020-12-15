@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint --no-fix",
+    "lint": "vue-cli-service lint --max-warnings=0 --no-fix",
     "lint:fix": "vue-cli-service lint"
   },
   "dependencies": {
@@ -19,12 +19,13 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
-    "@vue/cli-service": "^4.1.0",
+    "@vue/cli-service": "4.5.3",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "babel-eslint": "^10.0.3",
     "eslint": "^7.10.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-vue": "^7.0.0",
+    "lint-staged": "^10.5.3",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
@@ -44,5 +45,17 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "repository": "https://github.com/JackWilb/jackwilburn.xyz",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn lint"
+    ],
+    "*.vue": [
+      "yarn lint"
+    ]
+  }
 }
