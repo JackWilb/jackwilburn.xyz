@@ -1,5 +1,8 @@
 <template>
-  <div id="app" class="text-center">
+  <div
+    id="app"
+    class="text-center"
+  >
     <Biography />
     <Projects />
     <Resume />

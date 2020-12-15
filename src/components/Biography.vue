@@ -81,7 +81,10 @@
           To: "opacity-0 scale-95"
       -->
         <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-          <div v-if="open" class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+          <div
+            v-if="open"
+            class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+          >
             <div class="px-5 pt-4 flex items-center justify-between">
               <div>
                 <img
