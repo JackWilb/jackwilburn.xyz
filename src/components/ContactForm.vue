@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="contact">
     <h2 class="mt-5 text-3xl text-green-500">
       Contact Form
     </h2>
