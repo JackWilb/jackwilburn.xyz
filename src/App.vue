@@ -6,6 +6,7 @@
     <Biography />
     <Projects />
     <Resume />
+    <ContactForm />
   </div>
 </template>
 
@@ -13,6 +14,7 @@
 import Biography from './components/Biography.vue';
 import Projects from './components/Projects.vue';
 import Resume from './components/Resume.vue';
+import ContactForm from './components/ContactForm.vue';
 
 export default {
   name: 'App',
@@ -20,6 +22,7 @@ export default {
     Biography,
     Projects,
     Resume,
+    ContactForm,
   },
 };
 </script>
