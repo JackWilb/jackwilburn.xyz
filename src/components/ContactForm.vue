@@ -5,7 +5,7 @@
     </h2>
 
     <form
-      name="ask-question"
+      name="contact-form"
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
@@ -13,7 +13,7 @@
       <input
         type="hidden"
         name="form-name"
-        value="ask-question"
+        value="contact-form"
       >
       <div class="shadow overflow-hidden sm:rounded-md">
         <div class="px-4 py-5 bg-white sm:p-6">
