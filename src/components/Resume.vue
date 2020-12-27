@@ -5,7 +5,7 @@
     </h2>
 
     <!-- Jobs -->
-    <div class="text-left p-4 max-w-4xl mx-auto pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+    <div class="text-left p-4 max-w-4xl mx-auto">
       <h3 class="mt-4 text-xl font-bold">
         Professional Experience
       </h3>

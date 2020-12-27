@@ -9,6 +9,7 @@
     "lint:fix": "vue-cli-service lint"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
     "autoprefixer": "^9",
     "core-js": "^3.4.3",
     "mini-css-extract-plugin": "^1.3.3",
