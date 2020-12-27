@@ -116,7 +116,9 @@ export default {
         this.errors.push('Message is missing, please enter a message');
       }
 
-      e.preventDefault();
+      if (this.errors.length > 0) {
+        e.preventDefault();
+      }
     },
   },
 };
