@@ -9,6 +9,7 @@
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      @submit="validate"
     >
       <input
         type="hidden"
@@ -24,6 +25,7 @@
             >Your Name</label>
             <input
               id="name"
+              v-model="name"
               type="text"
               name="name"
               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
@@ -38,6 +40,7 @@
             >Your Email Address</label>
             <input
               id="email"
+              v-model="email"
               type="text"
               name="email"
               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
@@ -52,12 +55,20 @@
             >Message</label>
             <textarea
               id="message"
+              v-model="message"
               name="message"
               rows="3"
               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md"
               placeholder="Enter your message here"
             />
           </div>
+
+          <p
+            v-for="(error, index) of errors"
+            :key="index"
+          >
+            {{ error }}
+          </p>
         </div>
       </div>
       <div class="px-4 py-6 bg-gray-50 sm:px-6">
@@ -75,9 +86,37 @@
 export default {
   name: 'ContactForm',
 
+  data() {
+    return {
+      name: '',
+      email: '',
+      message: '',
+      errors: [],
+    };
+  },
+
   methods: {
-    validate() {
-      //
+    validate(e) {
+      this.errors = [];
+
+      // Check name
+      if (this.name === '') {
+        this.errors.push('Name is missing, please enter your full name');
+      }
+
+      // Check email
+      if (this.email === '') {
+        this.errors.push('Email is missing, please enter your email');
+      } else if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this.email)) {
+        this.errors.push('Email is invalid, please check your spelling');
+      }
+
+      // Check message
+      if (this.message === '') {
+        this.errors.push('Message is missing, please enter a message');
+      }
+
+      e.preventDefault();
     },
   },
 };
