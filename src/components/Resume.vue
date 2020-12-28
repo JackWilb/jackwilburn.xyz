@@ -5,11 +5,11 @@
     </h2>
 
     <!-- Jobs -->
-    <div class="text-left p-4 max-w-4xl mx-auto">
-      <h3 class="mt-4 text-xl font-bold">
+    <div class="text-left p-4 max-w-4xl mx-auto dark:text-gray-500">
+      <h2 class="mt-4 text-xl font-bold dark:text-gray-300">
         Professional Experience
-      </h3>
-      <h4 class="mt-2 text-lg">
+      </h2>
+      <h4 class="mt-2 text-lg dark:text-gray-400">
         Software Developer
       </h4>
       <p class="text-sm">
@@ -33,7 +33,7 @@
         </li>
       </ul>
 
-      <h4 class="mt-6 text-lg">
+      <h4 class="mt-6 text-lg dark:text-gray-400">
         Lead Data Scientist
       </h4>
       <p class="text-sm">
@@ -58,10 +58,10 @@
       </ul>
 
       <!-- Education -->
-      <h2 class="mt-4 text-xl font-bold">
+      <h2 class="mt-4 text-xl font-bold dark:text-gray-300">
         Education
       </h2>
-      <h4 class="mt-2 text-lg">
+      <h4 class="mt-2 text-lg dark:text-gray-400">
         Bachelor of Science: Mathematics
       </h4>
       <p class="text-sm">
@@ -75,11 +75,11 @@
       </ul>
 
       <!-- Articles -->
-      <h2 class="mt-4 text-xl font-bold">
+      <h2 class="mt-4 text-xl font-bold dark:text-gray-300">
         Articles
       </h2>
 
-      <h4 class="mt-2 text-lg">
+      <h4 class="mt-2 text-lg dark:text-gray-400">
         <a
           href="http://sci.utah.edu/~vdl/papers/2020_vahc_sanguine.pdf"
         >
@@ -115,7 +115,7 @@
         </li>
       </ul>
 
-      <h4 class="mt-6 text-lg">
+      <h4 class="mt-6 text-lg dark:text-gray-400">
         <a
           href="https://www.frontiersin.org/articles/10.3389/fninf.2020.00036/full"
         >
@@ -152,10 +152,10 @@
       </ul>
 
       <!-- Presentations -->
-      <h2 class="mt-4 text-xl font-bold">
+      <h2 class="mt-4 text-xl font-bold dark:text-gray-300">
         Presentations
       </h2>
-      <h4 class="mt-2 text-lg">
+      <h4 class="mt-2 text-lg dark:text-gray-400">
         How To De-anonymize 20,000 Ethereum Users, The Easy Way
       </h4>
       <p class="text-sm">

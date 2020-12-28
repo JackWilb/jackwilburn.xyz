@@ -1,7 +1,7 @@
 <template>
-  <div class="landing relative bg-white overflow-hidden xl:max-w-screen-2xl xl:mx-auto">
+  <div class="landing relative overflow-hidden xl:max-w-screen-2xl xl:mx-auto">
     <div class="mx-auto">
-      <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:h-screen lg:pb-28 xl:pb-32">
+      <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:h-screen lg:pb-28 xl:pb-32">
         <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
           <nav
             class="relative flex items-center justify-between sm:h-10 lg:justify-start"
@@ -20,7 +20,7 @@
                   <button
                     id="main-menu"
                     type="button"
-                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500"
+                    class="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500"
                     aria-haspopup="true"
                     @click="open = true;"
                   >
@@ -83,7 +83,7 @@
         <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
           <div
             v-if="open"
-            class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+            class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden dark:bg-black"
           >
             <div class="px-5 pt-4 flex items-center justify-between">
               <div>
@@ -96,7 +96,7 @@
               <div class="-mr-2">
                 <button
                   type="button"
-                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500"
+                  class="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500"
                   @click="open = false;"
                 >
                   <span class="sr-only">Close main menu</span>

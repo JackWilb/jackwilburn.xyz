@@ -1,7 +1,7 @@
 <template>
   <div
     id="app"
-    class="text-center"
+    class="text-center bg-white dark:bg-black"
   >
     <Biography />
     <Projects />
