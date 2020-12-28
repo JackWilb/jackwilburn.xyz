@@ -76,7 +76,7 @@ export default {
 
   methods: {
     muted(value) {
-      return value === null ? 'text-gray-200 dark:text-gray-800' : 'dark:text-gray-500';
+      return value === null ? 'text-gray-200 dark:text-gray-800' : 'text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-300';
     },
   },
 };
