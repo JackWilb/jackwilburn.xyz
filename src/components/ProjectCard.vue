@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-4 p-4 shadow-lg border-2 border-gray-50 rounded-none md:max-w-sm md:mx-auto">
+  <div class="mt-4 p-4 shadow-lg border-2 border-gray-50 dark:border-gray-800 rounded-none md:max-w-sm md:mx-auto">
     <div class="font-bold text-xl mb-2">
       {{ title }}
     </div>
@@ -76,7 +76,7 @@ export default {
 
   methods: {
     muted(value) {
-      return value === null ? 'text-gray-200' : '';
+      return value === null ? 'text-gray-200 dark:text-gray-800' : 'dark:text-gray-500';
     },
   },
 };
