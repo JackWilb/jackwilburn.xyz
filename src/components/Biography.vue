@@ -66,6 +66,13 @@
               >
                 Resume
               </a>
+
+              <a
+                href="#contact"
+                class="font-medium text-gray-500 hover:text-gray-900"
+              >
+                Contact
+              </a>
             </div>
           </nav>
         </div>
@@ -149,6 +156,14 @@
                   role="menuitem"
                 >
                   Resume
+                </a>
+
+                <a
+                  href="#contact"
+                  class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                  role="menuitem"
+                >
+                  Contact
                 </a>
               </div>
             </div>
