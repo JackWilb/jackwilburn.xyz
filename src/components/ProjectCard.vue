@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-4 p-4 shadow-lg border-2 border-gray-50 dark:border-gray-800 rounded-none md:max-w-sm md:mx-auto">
-    <div class="font-bold text-xl mb-2">
+  <div class="mt-4 p-4 shadow-lg border-2 border-gray-50 dark:border-gray-800 rounded-md md:max-w-sm md:mx-auto bg-white dark:bg-gray-900">
+    <div class="font-bold text-xl mb-2 dark:text-gray-300">
       {{ title }}
     </div>
     <p class="text-gray-500 text-base">
