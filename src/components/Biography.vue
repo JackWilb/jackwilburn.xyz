@@ -92,10 +92,10 @@
             v-if="open"
             class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden dark:bg-black"
           >
-            <div class="px-5 pt-4 flex items-center justify-between">
+            <div class="px-2 sm:px-4 pt-4 flex items-center justify-between">
               <div>
                 <img
-                  class="h-8 w-auto"
+                  class="h-8 w-auto sm:h-10"
                   src="../assets/logo.svg"
                   alt=""
                 >
