@@ -62,6 +62,19 @@
         Education
       </h2>
       <h4 class="mt-2 text-lg dark:text-gray-400">
+        Master of Science: Computer Science
+      </h4>
+      <p class="text-sm">
+        University of Utah, Salt Lake City
+      </p>
+      <p class="mb-2 text-xs text-gray-500">
+        Jan 2021 - Dec 2022 (expected)
+      </p>
+      <ul class="ml-8 list-disc">
+        <li>Expanding knowledge of computer systems as a whole, from low level hardware to operating systems to complex software.</li>
+      </ul>
+
+      <h4 class="mt-2 text-lg dark:text-gray-400">
         Bachelor of Science: Mathematics
       </h4>
       <p class="text-sm">
