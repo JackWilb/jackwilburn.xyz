@@ -94,6 +94,34 @@
 
       <h4 class="mt-2 text-lg dark:text-gray-400">
         <a
+          href="https://sci.utah.edu/~vdl/papers/paper_2021_sanguine_preprint.pdf"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="inline align-middle pb-1 w-4 text-green-500"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+            />
+          </svg>
+        </a>
+        Sanguine: Visual Analysis for Patient Blood Management (Journal)
+      </h4>
+      <p class="text-sm">
+        Information Visualization
+      </p>
+      <p class="mb-2 text-xs text-gray-500">
+        2021
+      </p>
+
+      <h4 class="mt-2 text-lg dark:text-gray-400">
+        <a
           href="http://sci.utah.edu/~vdl/papers/2020_vahc_sanguine.pdf"
         >
           <svg
@@ -111,7 +139,7 @@
             />
           </svg>
         </a>
-        Sanguine: Visual Analysis for Patient Blood Management
+        Sanguine: Visual Analysis for Patient Blood Management (Workshop)
       </h4>
       <p class="text-sm">
         Visual Analytics In Healthcare
