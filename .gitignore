@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+src/assets/dunes-edit-upscale.png
 src/assets/dunes-edit.png
 src/assets/dunes-edit.xcf
 src/assets/dunes.png
