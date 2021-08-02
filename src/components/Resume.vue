@@ -94,7 +94,7 @@
 
       <h4 class="mt-2 text-lg dark:text-gray-400">
         <a
-          href="https://sci.utah.edu/~vdl/papers/paper_2021_sanguine_preprint.pdf"
+          href="https://journals.sagepub.com/doi/10.1177/14738716211028565"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
