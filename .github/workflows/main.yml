@@ -3,31 +3,23 @@ name: Lint and build test
 on: 
   pull_request:
     branches:
-    - master
+    - main
   
   push:
     branches:
-    - master
+    - main
 
 jobs:
   build-and-test:
-    name: Build and test on Ubuntu - Node 14
+    name: Lint and build on Ubuntu - Node 16
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
       with:
-        node-version: '14.x'
+        node-version: '16'
+        cache: 'yarn'
 
-    - uses: actions/cache@v1
-      id: yarn-cache
-      with:
-        path: /home/runner/work/jackwilburn.xyz/jackwilburn.xyz/node_modules
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-cache
-
-    - name: Install yarn packages
-      if: steps.yarn-cache.outputs.cache-hit != 'true'
-      run: yarn install
-
+    - run: yarn install
     - run: yarn lint
     - run: yarn build
