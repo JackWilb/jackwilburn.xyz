@@ -2,9 +2,11 @@ module.exports = {
   root: true,
   env: {
     node: true,
+    es2021: true,
   },
   extends: [
     'plugin:vue/recommended',
+    'eslint:recommended',
     '@vue/airbnb',
   ],
   parserOptions: {

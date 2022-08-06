@@ -7,7 +7,7 @@
       {{ description }}
     </p>
     <div class="mt-6 grid grid-cols-4 place-items-center">
-      <a />
+      <div />
       <a
         :href="github"
         :class="muted(github)"
@@ -17,7 +17,7 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          class="w-8"
+          class="w-8 ml-2"
         >
           <path
             stroke-linecap="round"
@@ -26,6 +26,7 @@
             d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
           />
         </svg>
+        GitHub
       </a>
       <a
         :href="link"
@@ -45,8 +46,9 @@
             d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
           />
         </svg>
+        App
       </a>
-      <a />
+      <div />
     </div>
   </div>
 </template>

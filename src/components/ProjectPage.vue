@@ -53,7 +53,7 @@
 import ProjectCard from './ProjectCard.vue';
 
 export default {
-  name: 'Projects',
+  name: 'ProjectPage',
   components: {
     ProjectCard,
   },

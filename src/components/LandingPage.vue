@@ -14,6 +14,7 @@
                   <img
                     class="h-8 w-auto sm:h-10"
                     src="../assets/logo.svg"
+                    alt="logo"
                   >
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
@@ -210,7 +211,7 @@
 
 <script>
 export default {
-  name: 'Landing',
+  name: 'LandingPage',
 
   data() {
     return {
