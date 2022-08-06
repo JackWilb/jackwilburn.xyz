@@ -22,45 +22,48 @@
             <label
               for="name"
               class="block text-sm font-medium text-gray-700 dark:text-gray-500"
-            >Your Name</label>
-            <input
-              id="name"
-              v-model="name"
-              type="text"
-              name="name"
-              class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md dark:bg-black dark:text-gray-500"
-              placeholder="John Smith"
-            >
+            >Your Name
+              <input
+                id="name"
+                v-model="name"
+                type="text"
+                name="name"
+                class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md dark:bg-black dark:text-gray-500"
+                placeholder="John Smith"
+              >
+            </label>
           </div>
 
           <div class="p-2 max-w-2xl mx-auto">
             <label
               for="email"
               class="block text-sm font-medium text-gray-700 dark:text-gray-500"
-            >Your Email Address</label>
-            <input
-              id="email"
-              v-model="email"
-              type="text"
-              name="email"
-              class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md dark:bg-black dark:text-gray-500"
-              placeholder="john.smith@gmail.com"
-            >
+            >Your Email Address
+              <input
+                id="email"
+                v-model="email"
+                type="text"
+                name="email"
+                class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md dark:bg-black dark:text-gray-500"
+                placeholder="john.smith@gmail.com"
+              >
+            </label>
           </div>
 
           <div class="p-2 max-w-2xl mx-auto">
             <label
               for="message"
               class="block text-sm font-medium text-gray-700 dark:text-gray-500"
-            >Message</label>
-            <textarea
-              id="message"
-              v-model="message"
-              name="message"
-              rows="3"
-              class="shadow-sm focus:ring-green-500 focus:border-green-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md dark:bg-black dark:text-gray-500"
-              placeholder="Enter your message here"
-            />
+            >Message
+              <textarea
+                id="message"
+                v-model="message"
+                name="message"
+                rows="3"
+                class="shadow-sm focus:ring-green-500 focus:border-green-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md dark:bg-black dark:text-gray-500"
+                placeholder="Enter your message here"
+              />
+            </label>
           </div>
 
           <p
@@ -83,44 +86,36 @@
     </form>
   </div>
 </template>
-<script>
-export default {
-  name: 'ContactForm',
+<script setup lang="ts">
+import { ref, Ref } from 'vue';
 
-  data() {
-    return {
-      name: '',
-      email: '',
-      message: '',
-      errors: [],
-    };
-  },
+const name = ref('');
+const email = ref('');
+const message = ref('');
+const errors: Ref<string[]> = ref([]);
 
-  methods: {
-    validate(e) {
-      this.errors = [];
+function validate(event: Event) {
+  errors.value = [];
 
-      // Check name
-      if (this.name === '') {
-        this.errors.push('Name is missing, please enter your full name');
-      }
+  // Check name
+  if (name.value === '') {
+    errors.value.push('Name is missing, please enter your full name');
+  }
 
-      // Check email
-      if (this.email === '') {
-        this.errors.push('Email is missing, please enter your email');
-      } else if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this.email)) {
-        this.errors.push('Email is invalid, please check your spelling');
-      }
+  // Check email
+  if (email.value === '') {
+    errors.value.push('Email is missing, please enter your email');
+  } else if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email.value)) {
+    errors.value.push('Email is invalid, please check your spelling');
+  }
 
-      // Check message
-      if (this.message === '') {
-        this.errors.push('Message is missing, please enter a message');
-      }
+  // Check message
+  if (message.value === '') {
+    errors.value.push('Message is missing, please enter a message');
+  }
 
-      if (this.errors.length > 0) {
-        e.preventDefault();
-      }
-    },
-  },
-};
+  if (errors.value.length > 0) {
+    event.preventDefault();
+  }
+}
 </script>

@@ -3,28 +3,18 @@
     id="app"
     class="text-center bg-white dark:bg-black"
   >
-    <Biography />
-    <Projects />
-    <Resume />
+    <LandingPage />
+    <ProjectPage />
+    <ResumePage />
     <ContactForm />
   </div>
 </template>
 
-<script>
-import Biography from './components/Biography.vue';
-import Projects from './components/Projects.vue';
-import Resume from './components/Resume.vue';
+<script setup lang="ts">
+import LandingPage from './components/LandingPage.vue';
+import ProjectPage from './components/ProjectPage.vue';
+import ResumePage from './components/ResumePage.vue';
 import ContactForm from './components/ContactForm.vue';
-
-export default {
-  name: 'App',
-  components: {
-    Biography,
-    Projects,
-    Resume,
-    ContactForm,
-  },
-};
 </script>
 
 <style>

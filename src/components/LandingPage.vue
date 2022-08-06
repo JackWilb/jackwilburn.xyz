@@ -7,13 +7,14 @@
             class="relative flex items-center justify-between sm:h-10 lg:justify-start"
             aria-label="Global"
           >
-            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+            <div class="flex items-center flex-grow shrink-0 lg:grow-0">
               <div class="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
                   <span class="sr-only">Workflow</span>
                   <img
                     class="h-8 w-auto sm:h-10"
                     src="../assets/logo.svg"
+                    alt="logo"
                   >
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
@@ -87,7 +88,7 @@
           From: "opacity-100 scale-100"
           To: "opacity-0 scale-95"
       -->
-        <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="absolute top-0 inset-x-0 p-2 transition origin-top-right md:hidden">
           <div
             v-if="open"
             class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden dark:bg-black"
@@ -177,7 +178,7 @@
             </h1>
             <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-md sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               I'm a software developer based in Salt Lake City, Utah.
-              I'm currently making data visualizations for the
+              I'm currently the lead developer overseeing $3,000,000 in data visualizations research for the
               <a
                 class="text-green-500 underline"
                 href="https://vdl.sci.utah.edu"
@@ -208,16 +209,10 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Landing',
+<script setup lang="ts">
+import { ref } from 'vue';
 
-  data() {
-    return {
-      open: false,
-    };
-  },
-};
+const open = ref(false);
 </script>
 
 <style scoped>

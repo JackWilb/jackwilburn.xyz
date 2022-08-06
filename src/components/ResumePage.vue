@@ -103,6 +103,7 @@
             stroke="currentColor"
             class="inline align-middle pb-1 w-4 text-green-500"
           >
+            <title>Journal link icon</title>
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -131,6 +132,7 @@
             stroke="currentColor"
             class="inline align-middle pb-1 w-4 text-green-500"
           >
+            <title>Journal link icon</title>
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -167,6 +169,7 @@
             stroke="currentColor"
             class="inline align-middle pb-1 w-4 text-green-500"
           >
+            <title>Journal link icon</title>
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -212,10 +215,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Resume',
-};
+<script setup lang="ts">
 </script>
 
 <style scoped>
