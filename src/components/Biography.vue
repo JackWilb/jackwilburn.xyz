@@ -177,7 +177,7 @@
             </h1>
             <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-md sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               I'm a software developer based in Salt Lake City, Utah.
-              I'm currently making data visualizations for the
+              I'm currently the lead developer overseeing $3,000,000 in data visualizations research for the
               <a
                 class="text-green-500 underline"
                 href="https://vdl.sci.utah.edu"
