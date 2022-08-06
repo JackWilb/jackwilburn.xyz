@@ -7,7 +7,7 @@
             class="relative flex items-center justify-between sm:h-10 lg:justify-start"
             aria-label="Global"
           >
-            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+            <div class="flex items-center flex-grow shrink-0 lg:grow-0">
               <div class="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
                   <span class="sr-only">Workflow</span>
@@ -88,7 +88,7 @@
           From: "opacity-100 scale-100"
           To: "opacity-0 scale-95"
       -->
-        <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="absolute top-0 inset-x-0 p-2 transition origin-top-right md:hidden">
           <div
             v-if="open"
             class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden dark:bg-black"
