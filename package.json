@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "build": "vite build",
-    "dev": "vite --host 0.0.0.0",
-    "serve": "vite preview  --host 0.0.0.0",
+    "serve": "vite --host 0.0.0.0 --port 8080",
     "lint": "eslint --ext .ts,.vue --ignore-path .gitignore --no-fix src",
     "lint:fix": "eslint --ext .ts,.vue --ignore-path .gitignore --fix src"
   },
