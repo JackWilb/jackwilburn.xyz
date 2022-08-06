@@ -215,10 +215,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ResumePage',
-};
+<script setup lang="ts">
 </script>
 
 <style scoped>

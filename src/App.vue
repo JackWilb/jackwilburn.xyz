@@ -10,21 +10,11 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import LandingPage from './components/LandingPage.vue';
 import ProjectPage from './components/ProjectPage.vue';
 import ResumePage from './components/ResumePage.vue';
 import ContactForm from './components/ContactForm.vue';
-
-export default {
-  name: 'App',
-  components: {
-    LandingPage,
-    ProjectPage,
-    ResumePage,
-    ContactForm,
-  },
-};
 </script>
 
 <style>

@@ -53,35 +53,22 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ProjectCard',
+<script setup lang="ts">
+import { defineProps, withDefaults } from 'vue';
 
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-    github: {
-      type: String,
-      default: null,
-    },
-    link: {
-      type: String,
-      default: null,
-    },
-  },
+withDefaults(defineProps<{
+  title: string,
+  description: string,
+  github?: string,
+  link?: string,
+}>(), {
+  github: undefined,
+  link: undefined,
+});
 
-  methods: {
-    muted(value) {
-      return value === null ? 'text-gray-200 dark:text-gray-800' : 'text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-300';
-    },
-  },
-};
+function muted(value: string | undefined) {
+  return value === undefined ? 'text-gray-200 dark:text-gray-800' : 'text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-300';
+}
 </script>
 
 <style scoped>

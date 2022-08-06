@@ -49,17 +49,8 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import ProjectCard from './ProjectCard.vue';
-
-export default {
-  name: 'ProjectPage',
-  components: {
-    ProjectCard,
-  },
-  props: {
-  },
-};
 </script>
 
 <style scoped>

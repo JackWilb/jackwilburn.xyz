@@ -209,16 +209,10 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'LandingPage',
+<script setup lang="ts">
+import { ref } from 'vue';
 
-  data() {
-    return {
-      open: false,
-    };
-  },
-};
+const open = ref(false);
 </script>
 
 <style scoped>

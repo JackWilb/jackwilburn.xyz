@@ -86,44 +86,36 @@
     </form>
   </div>
 </template>
-<script>
-export default {
-  name: 'ContactForm',
+<script setup lang="ts">
+import { ref, Ref } from 'vue';
 
-  data() {
-    return {
-      name: '',
-      email: '',
-      message: '',
-      errors: [],
-    };
-  },
+const name = ref('');
+const email = ref('');
+const message = ref('');
+const errors: Ref<string[]> = ref([]);
 
-  methods: {
-    validate(e) {
-      this.errors = [];
+function validate(event: Event) {
+  errors.value = [];
 
-      // Check name
-      if (this.name === '') {
-        this.errors.push('Name is missing, please enter your full name');
-      }
+  // Check name
+  if (name.value === '') {
+    errors.value.push('Name is missing, please enter your full name');
+  }
 
-      // Check email
-      if (this.email === '') {
-        this.errors.push('Email is missing, please enter your email');
-      } else if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this.email)) {
-        this.errors.push('Email is invalid, please check your spelling');
-      }
+  // Check email
+  if (email.value === '') {
+    errors.value.push('Email is missing, please enter your email');
+  } else if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email.value)) {
+    errors.value.push('Email is invalid, please check your spelling');
+  }
 
-      // Check message
-      if (this.message === '') {
-        this.errors.push('Message is missing, please enter a message');
-      }
+  // Check message
+  if (message.value === '') {
+    errors.value.push('Message is missing, please enter a message');
+  }
 
-      if (this.errors.length > 0) {
-        e.preventDefault();
-      }
-    },
-  },
-};
+  if (errors.value.length > 0) {
+    event.preventDefault();
+  }
+}
 </script>
